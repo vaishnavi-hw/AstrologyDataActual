@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Data</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        form{
+            width: 40vmax;
+            /* height: 40vmax; */
+            padding: 20px;
+            background: lightblue;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            margin: 100px 10px 10px 10px;
+            box-shadow: 10px 10px 10px grey;
+        }
+        form input{
+            width: 50vmin;
+            border-radius: 50px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/data" method="post">
+            <h1>Astrology App Data</h1>
+            <input type="text" name="lagna" placeholder="लग्न">
+            <input type="text" name="bhav" placeholder="भाव">
+            <input type="text" name="grah" placeholder="ग्रह">
+            <textarea name="text" style="resize:none; height:40vmin;width: 50vmin; padding: 10px;font-size: 20px;" placeholder="फल यहाँ लिखिए|"></textarea>
+            <input type="submit" value="Submit" style="background-color: green;color: whitesmoke;">
+        </form>
+    </div>
+</body>
+</html>
